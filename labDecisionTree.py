@@ -53,7 +53,10 @@ def id3(childrens, parent, attributesCopy, dataFilter, depth):
 		result = filter(lambda x: x[attributes.index(parent)] == child, dataFilter)
 		pure = isPure(result)
 		if pure or len(result) == 1:
-			print "%sANSWER: %s" % (" " * ((depth + 1) * 2), result[0][-1])
+			if any(result):
+				print "%sANSWER: %s" % (" " * ((depth + 1) * 2), result[0][-1])
+			else:
+				print "%sANSWER:" % (" " * ((depth + 1) * 2))
 		else:
 			copy_list = copy.deepcopy(attributesCopy)
 			copy_list.remove(parent)
