@@ -1,0 +1,24 @@
+@relation inflated
+
+@attribute color  {yellow, purple}
+@attribute size   {large, small}
+@attribute act    {stretch, dip}
+@attribute age    {adult, child}
+@attribute inflated  {T, F}
+
+@data
+%
+% 24 instances
+%
+yellow,small,stretch,child,T
+yellow,small,dip,child,F
+yellow,small,dip,child,F
+yellow,large,stretch,child,T
+yellow,large,dip,child,F
+yellow,large,dip,child,F
+purple,small,stretch,child,T
+purple,small,dip,child,F
+purple,small,dip,child,F
+purple,large,stretch,child,T
+purple,large,dip,child,F
+purple,large,dip,child,F
