@@ -10,7 +10,6 @@ data = []
 totalValues = {}
 numberData = 0
 gainInformation = {}
-tree = []
 
 '''
   /**********************************************
@@ -123,8 +122,6 @@ for line in fileinput.input():
 			#Start reading the data
 			readData = True
 
-'''trya = getInformationGain(getEntropy(getTotalValues(data), len(data)), data, attributes[:-1])
-tree.append(Node(trya, [], attributesValues[trya], None, True))
-id3(attributesValues[trya], trya, attributes[:-1], data, 0)'''
-print("HI")
+trya = getInformationGain(getEntropy(getTotalValues(data), len(data)), data, attributes[:-1])
+id3(attributesValues[trya], trya, attributes[:-1], data, 0)
 
